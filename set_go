@@ -1,0 +1,8 @@
+#!/bin/bash
+systemctl stop firewalld
+iptables -F
+export GOPATH=/root/go_proj/:/root/go_proj/bin/
+export PATH=$PATH:/usr/local/go/bin/:/usr/local/go/
+export PATH=$PATH:$GOPATH
+cd go_proj/src/github.com/gluster/glusterd2/
+gometalinter --install
