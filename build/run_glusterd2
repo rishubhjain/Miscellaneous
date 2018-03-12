@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm -rf /var/lib/gd2
+mkdir /var/lib/gd2
+./glusterd2 --config=conf.toml
